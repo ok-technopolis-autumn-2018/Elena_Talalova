@@ -1,0 +1,78 @@
+
+.todos-list {
+
+    }
+
+    .todos-list_item {
+        height: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 12px;
+        border-bottom: solid 1px;
+        border-color: #e6e6e6;
+
+        }
+        .todos-list_item:after {
+            content: '';
+            clear: both;
+            display: table;
+            }
+
+        .todos-list_item_ready-marker {
+            float: left;
+            margin-right: 16px;
+            }
+
+        .todos-list_item_text-w {
+            overflow: hidden;
+            }
+
+            .todos-list_item_text {
+                font-family: 'Helvetica Neue', Arial, "Lucida Grande", sans-serif;
+                color: #666;
+                overflow: hidden;
+                border: none;
+                background: none;
+                outline: none;
+                resize: none;
+                width: 100%;
+                font-size: 24px;
+                }
+
+                .todos-list_item_text:hover {
+                    cursor: pointer;
+                }
+
+            .todos-list_item:hover {
+                background: #fafafa;
+                cursor: pointer;
+                }
+
+            .todos-list_item_remove{
+                margin-top: 8px; 
+                float: right;
+                position: relative;
+                width: 16px;
+                height: 16px;
+                }   
+
+            .custom-remove .remove_visual{
+                position: absolute;
+                width: 16px;
+                height: 16px;
+            }
+            .custom-remove{
+                opacity: 0; 
+            }
+            .todos-list_item:hover .remove_visual {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                background: url(../../../images/close.png);
+                opacity: 1;    
+            }
+
+        .custom-checkbox_target:checked ~ .todos-list_item .todos-list_item_text- .todos-list_item_text{
+            text-decoration: line-through;
+        }
+
